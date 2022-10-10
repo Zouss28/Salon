@@ -1,6 +1,5 @@
 #!/bin/bash
 PSQL="psql --username=freecodecamp --dbname=salon -A -t -c "
-CO=$($PSQL "TRUNCATE customers,services,appointments")
 echo -e "\n~~~~~ MY SALON ~~~~~\nWelcome to My Salon, how can I help you?\n"
 MENU(){
   echo -e "1) nail_treatments\n2) massages\n3) hair_cutting"
